@@ -10,6 +10,6 @@ button{
     justify-content: center;
     align-items: center;
 }
-.relativeList{
+#relativeList{
     padding: auto;
 }
