@@ -12,4 +12,5 @@ button{
 }
 #relativeList{
     padding: auto;
+    minHeight: '50px'
 }

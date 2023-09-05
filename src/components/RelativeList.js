@@ -14,7 +14,7 @@ function RelativeList() {
   return (
     <div>
       <button onClick={handleAddRelative}>Add Relative</button>
-      <ol key="relativeList"  style={{ minHeight: '50px' }}>
+      <ol key="relativeList"  id="relativeList">
         {relatives.map((relative) => (
           <li key={relative.key}>
             {relative.name}{' '}
