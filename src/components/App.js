@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { RelativeProvider } from './RelativeContext'; // Ensure the correct import path
+import RelativeList from './RelativeList';
 
-const App = () => {
+function App() {
   return (
-    <div id="main">
-               {/* Do not remove the main div */}
+    <div>
+      <h1>Diwali Relative List</h1>
+      <RelativeProvider>
+        <RelativeList />
+      </RelativeProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
