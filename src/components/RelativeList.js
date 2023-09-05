@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { RelativeContext } from './RelativeContext';
-
+import "../styles/App.css"
 function RelativeList() {
   const { relatives, addRelative, removeRelative } = useContext(RelativeContext);
 
