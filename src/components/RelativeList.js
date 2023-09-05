@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { RelativeContext } from './RelativeContext';
-import "../styles/App.css"
+
 function RelativeList() {
   const { relatives, addRelative, removeRelative } = useContext(RelativeContext);
 
@@ -14,9 +14,9 @@ function RelativeList() {
   return (
     <div>
       <button onClick={handleAddRelative}>Add Relative</button>
-      <ol key="relativeList" id="relativeList">
+      <ol key="relativeList"  style={{ minHeight: '50px' }}>
         {relatives.map((relative) => (
-          <li key={relative.key} id="li">
+          <li key={relative.key}>
             {relative.name}{' '}
             <button onClick={() => removeRelative(relative.key)}>Remove</button>
           </li>
@@ -27,4 +27,5 @@ function RelativeList() {
 }
 
 export default RelativeList;
+
 
