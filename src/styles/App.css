@@ -10,7 +10,7 @@ button{
     justify-content: center;
     align-items: center;
 }
-#relativeList{
+ol#relativeList{
     padding: auto;
    min-height: "50px";
     visibility: visible;
