@@ -12,5 +12,6 @@ button{
 }
 #relativeList{
     padding: auto;
-    minHeight: '50px'
+   min-height: "50px";
+    visibility: visible;
 }
