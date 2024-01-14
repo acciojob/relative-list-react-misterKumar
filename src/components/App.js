@@ -1,18 +1,19 @@
-import React from 'react';
-import { RelativeProvider } from './RelativeContext'; // Ensure the correct import path
-import RelativeList from './RelativeList';
+import React from 'react'
 
-function App() {
+const App = () => {
+
+  const relatives = ['jai Hanuman ', 'sree Ram ', 'Sita Maa', 'Lakshaman baladev', 'manasa Brahma ', 'Vishnu sarvanta', 'Shankar sarveswara' ]
   return (
-    <div>
-      <h1>Diwali Relative List</h1>
-      <RelativeProvider>
-        <RelativeList />
-      </RelativeProvider>
+    <div id="main">
+               {/* Do not remove the main div */}
+               <ol id='relativeList'>
+                {relatives.map((item,index)=>{
+
+                  return  <li id={'relativeListItem'+index}>{item}</li>
+                })}
+               </ol>
     </div>
-  );
+  )
 }
 
-export default App;
-
-
+export default App
